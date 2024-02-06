@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="student">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="jméno" type="xs:string"/>
+                <xs:element name="přijmeni" type="xs:string"/>
+                <xs:element name="fakulta" type="xs:string"/>
+                <xs:element name="katedra" type="xs:string"/>
+                <xs:element ref="absolovované_předměty"/>
+                <xs:element ref="aktuálně_studované"/>
+                <xs:element ref="budoucí_předměty"/>
+            </xs:sequence>
+            <xs:attribute name="studentské_číslo"/>
+            <xs:attribute name="st"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="absolovované_předměty">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="předmět" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="předmět">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="semestr" type="xs:string" />
+                <xs:element name="statut" type="xs:string" />
+                <xs:element name="kredity" type="xs:positiveInteger"/>
+                <xs:element name="pokus" type="xs:positiveInteger" />
+                <xs:element name="hodnocení" type="xs:string"/>
+                <xs:element name="body" type="xs:positiveInteger"/>
+                <xs:element name="datum" type="xs:date"/>
+            </xs:sequence>
+            <xs:attribute name="název"/>
+            <xs:attribute name="zkratka"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="aktuálně_studované">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="předmět" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="budoucí_předměty">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="předmět" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

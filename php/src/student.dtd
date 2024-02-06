@@ -1,0 +1,24 @@
+<!ELEMENT student (jméno, přijmeni, fakulta, katedra, absolovované_předměty, aktuálně_studované?,budoucí_předměty?)>
+<!ATTLIST student studentské_číslo CDATA #REQUIRED>
+<!ATTLIST student st CDATA #REQUIRED>
+
+<!ELEMENT jméno (#PCDATA)>
+<!ELEMENT přijmeni (#PCDATA)>
+<!ELEMENT fakulta (#PCDATA)>
+<!ELEMENT katedra (#PCDATA)>
+<!ELEMENT absolovované_předměty (předmět*)>
+
+<!ELEMENT předmět (semestr, statut, kredity, pokus, hodnocení, body, datum)>
+<!ATTLIST předmět název CDATA #REQUIRED>
+<!ATTLIST předmět zkratka CDATA #REQUIRED>
+
+<!ELEMENT semestr (#PCDATA)>
+<!ELEMENT statut (#PCDATA)>
+<!ELEMENT kredity (#PCDATA)>
+<!ELEMENT pokus (#PCDATA)>
+<!ELEMENT hodnocení (#PCDATA)>
+<!ELEMENT body (#PCDATA)>
+<!ELEMENT datum (#PCDATA)>
+
+<!ELEMENT aktuálně_studované (předmět*)>
+<!ELEMENT budoucí_předměty (předmět*)>

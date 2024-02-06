@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student studentské_číslo="F21456" st="ST78423">
+    <jméno>Václav</jméno>
+    <přijmeni>Oštěp</přijmeni>
+    <fakulta>Pedagogická</fakulta>
+    <katedra>Psychologie</katedra>
+    <absolovované_předměty>
+        <předmět název="Úvod do psychologie" zkratka="KP/UDP">
+            <semestr>1</semestr>
+            <statut>A</statut>
+            <kredity>16</kredity>
+            <pokus>4</pokus>
+            <hodnocení>3</hodnocení>
+            <body>84</body>
+            <datum>12.05.2023</datum>
+        </předmět>
+    </absolovované_předměty>
+</student>

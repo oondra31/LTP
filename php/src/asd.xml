@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student studentské_číslo="asd" st="d">
+    <jméno>okok</jméno>
+    <přijmeni>ds</přijmeni>
+    <fakulta>sda</fakulta>
+    <katedra>sda</katedra>
+    <absolovované_předměty>
+        <předmět název="asdas" zkratka="fdf">
+            <semestr>ffsd</semestr>
+            <statut>sd</statut>
+            <kredity>sd</kredity>
+            <pokus>sffs</pokus>
+            <hodnocení>df</hodnocení>
+            <body>sdfsd</body>
+            <datum>f</datum>
+        </předmět>
+    </absolovované_předměty>
+</student>

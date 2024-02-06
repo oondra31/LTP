@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="pokus.xsl"?>
+<student studentské_číslo="F21268" st="96214">
+    <jméno>Karel</jméno>
+    <přijmeni>Novák</přijmeni>
+    <fakulta>Přírodovědecká</fakulta>
+    <katedra>Informatiky</katedra>
+    <absolovované_předměty>
+        <předmět název="Algoritmizace a programování I" zkratka="KI/APR1">
+            <semestr>Zimní</semestr>
+            <statut>A</statut>
+            <kredity>4</kredity>
+            <pokus>1</pokus>
+            <hodnocení>Splněno</hodnocení>
+            <body>25</body>
+            <datum>2022-03-01</datum>
+        </předmět>
+    </absolovované_předměty>
+    <aktuálně_studované>
+
+    </aktuálně_studované>
+    <budoucí_předměty>
+
+    </budoucí_předměty>
+</student>
